@@ -31,11 +31,11 @@ namespace __cxxabiv1{
 
 static __UCLIBCXX_TLS __cxa_eh_globals eh_globals;
 
-extern "C" __cxa_eh_globals* __cxa_get_globals() throw(){
+extern "C" __cxa_eh_globals* __cxa_get_globals() noexcept {
 	return &eh_globals;
 }
 
-extern "C" __cxa_eh_globals* __cxa_get_globals_fast() throw(){
+extern "C" __cxa_eh_globals* __cxa_get_globals_fast() noexcept {
 	return &eh_globals;
 }
 

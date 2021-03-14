@@ -24,7 +24,7 @@
 
 namespace std{
 
-	_UCXXEXPORT logic_error::logic_error() throw() : mstring(){
+	_UCXXEXPORT logic_error::logic_error() noexcept : mstring(){
 
 	}
 
@@ -32,7 +32,7 @@ namespace std{
 
 	}
 
-	_UCXXEXPORT const char * logic_error::what() const throw(){
+	_UCXXEXPORT const char * logic_error::what() const noexcept {
 		return mstring.c_str();
 	}
 
@@ -53,7 +53,7 @@ namespace std{
 
 	}
 
-	_UCXXEXPORT const char * runtime_error::what() const throw(){
+	_UCXXEXPORT const char * runtime_error::what() const noexcept {
 		return mstring.c_str();
 	}
 
