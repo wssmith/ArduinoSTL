@@ -17,9 +17,10 @@
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-#include <new>
+//#include <new>
+#include "new"
 
-const std::nothrow_t std::nothrow = { };
+const std::nothrow_t std::nothrow;
 
 //Name selected to be compatable with g++ code
 std::new_handler __new_handler;

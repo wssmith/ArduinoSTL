@@ -29,7 +29,7 @@
 namespace std{
 	class _UCXXEXPORT bad_alloc : public exception {};
 
-	struct _UCXXEXPORT nothrow_t {};
+	struct _UCXXEXPORT nothrow_t { explicit nothrow_t() = default; };
 	extern const nothrow_t nothrow;
 
 	typedef void (*new_handler)();

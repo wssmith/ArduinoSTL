@@ -20,7 +20,8 @@
 // Arduino 1.0 contains an implementation for this.
 #if ARDUINO < 100
 
-#include <new>
+//#include <new>
+#include "new"
 #include <cstdlib>
 #include <func_exception>
 
