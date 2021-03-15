@@ -1,3 +1,5 @@
+Forked from Mike Matera's ArduinoSTL. I'll be making only minor changes to ease compilation in my environment.
+
 # ArduinoSTL
 This is an implementation of a C++ standard library packaged as an Arduino library. The library supports teaching my CS-11M class by adding key C++ features into the Arduino environment. 
 
